@@ -1,0 +1,8 @@
+services:
+  - name: song-api
+    type: web
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /lumba/songs
+    autoDeployTrigger: commit
